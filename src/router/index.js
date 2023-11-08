@@ -12,10 +12,10 @@ const router = createRouter({
       components: {
         header: DefaultHeader,
         body: HelloWorld,
-        footer: DefaultFooter
-      }
-    }
-  ]
+        footer: DefaultFooter,
+      },
+    },
+  ],
 })
 
 export default router

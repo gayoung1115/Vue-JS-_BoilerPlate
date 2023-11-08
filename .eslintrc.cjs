@@ -7,7 +7,7 @@ module.exports = {
   env: {
     'vue/setup-compiler-macros': true,
     node: true, //process오류
-    browser: true
+    browser: true,
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
@@ -16,15 +16,16 @@ module.exports = {
       'error',
       {
         singleQuote: true,
-        semi: true,
-        useTabs: true,
+        semi: false,
+        useTabs: false,
         tabWidth: 2,
-        trailingComma: 'all',
-        printWidth: 80,
+        trailingComma: 'es5',
+        printWidth: 120,
         bracketSpacing: true,
         arrowParens: 'avoid',
-        endOfLine: 'auto' // 한줄 추가
-      }
-    ]
-  }
+        endOfLine: 'auto',
+        bracketSameLine: true,
+      },
+    ],
+  },
 }
